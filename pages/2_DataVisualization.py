@@ -10,7 +10,7 @@ st.set_page_config(
 
 # Content of the page
 option = st.selectbox(
-    'Choose a data visualization : ',
+    'Choose a data visualization: ',
     ('Accident severity over years', 'Accidents reported over years', 'Accidents happened in day of week',
      'Impact of lighting on road accidents', 'Impact of atmospheric conditions on road accidents',
     'Impact of road category on accidents','Impact of intersection type on accidents','Impact of accident time on severity',

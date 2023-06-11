@@ -5,7 +5,8 @@ st.set_page_config(
     page_title="France Road Accident Data Analysis",
     layout='wide'
 )
-st.write(":white[France Road Accidents Data Analysis & Severity Prediction !]")
+#st.write("France Road Accidents Data Analysis & Severity Prediction !")
+st.markdown(f'<h1 style="color:#ffffff;font-size:24px;">{"France Road Accidents Data Analysis & Severity Prediction !”"}</h1>', unsafe_allow_html=True)
 
 st.markdown(
     """

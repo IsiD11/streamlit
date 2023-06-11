@@ -29,7 +29,7 @@ st.markdown(
          f"""
          <style>
          .stApp {{
-             background-image: url("https://i.natgeofe.com/k/04665f4a-3f8d-4b62-8ca3-09ce7dfc5a20/france-eiffel-tower_4x3.jpg");
+             background-image: url("https://www.psbedu.paris/sites/default/files/hot_content/mobile/tour-eiffel.jpg");
              background-attachment: fixed;
              background-size: cover
          }}

@@ -9,12 +9,10 @@ st.set_page_config(
 st.markdown(f'<b><h0 style="color:#ffffff;font-size:35px;">{"France Road Accidents Data Analysis & Severity Prediction !"}</h0><br><br>', unsafe_allow_html=True)
 
 st.markdown(
-    """
-    In this project it is aimed to analyse the road accidents data in France from 2005 till 2016. The input data contains lot of information about the 
+    f'<b><h1 style="color:#ffffff;font-size:35px;">{"In this project it is aimed to analyse the road accidents data in France from 2005 till 2016. The input data contains lot of information about the 
     accident, users and involved vehicles. The aim would be to predict the severity of the accident - whether the injured person is Slightly Injured/Not injured at all 
-    Vs Heavily Injured/Died.
-    """
-)
+    Vs Heavily Injured/Died."}</h1><br><br>', unsafe_allow_html=True)
+
 
 # To set the background image of the page
 st.markdown(

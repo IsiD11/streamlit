@@ -6,7 +6,7 @@ st.set_page_config(
     layout='wide'
 )
 
-st.markdown(f'<b><h0 style="color:#ffffff;font-size:30px;">{"France Road Accidents Data Analysis & Severity Prediction !”"}</h0>', unsafe_allow_html=True)
+st.markdown(f'<b><h0 style="color:#ffffff;font-size:35px;">{"France Road Accidents Data Analysis & Severity Prediction !"}</h0>', unsafe_allow_html=True)
 
 st.markdown(
     """

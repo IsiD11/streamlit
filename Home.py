@@ -29,7 +29,7 @@ st.markdown(
          f"""
          <style>
          .stApp {{
-             background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAPxu5wiYoqYw43nC3DdYypfURLFreUgPYnXMMB87SdL47sBEi-PEl45xfkm_Cm169cPU&usqp=CAU");
+             background-image: url("https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg");
              background-attachment: fixed;
              background-size: cover
          }}

@@ -3,10 +3,9 @@ import streamlit as st
 
 st.set_page_config(
     page_title="France Road Accident Data Analysis",
-    page_icon="👋",
 )
 
-st.write("# France Road Accidents Data Analysis & Severity Prediction ! 👋")
+st.write("# France Road Accidents Data Analysis & Severity Prediction ! ")
 
 st.markdown(
     """
@@ -30,7 +29,7 @@ st.markdown(
          f"""
          <style>
          .stApp {{
-             background-image: url("https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iB8ty6.RHr8M/v1/800x-1.jpg");
+             background-image: url("https://i.natgeofe.com/k/04665f4a-3f8d-4b62-8ca3-09ce7dfc5a20/france-eiffel-tower_4x3.jpg");
              background-attachment: fixed;
              background-size: cover
          }}

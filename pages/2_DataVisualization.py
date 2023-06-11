@@ -19,18 +19,8 @@ option = st.selectbox(
     'Impact of area zone on severity','Impact of collision type on severity','Impact of surface condition on severity',
     'Impact of accident situation on severity'))
 
-if option == 'Accident severity over years':
-st.image(image_list[0])
-elif option == item_list[0]:
-st.image(image_list[0])
-elif option == item_list[1]:
-st.image(image_list[1])
-elif option == item_list[2]:
-st.image(image_list[2])
-elif option == item_list[3]:
-st.image(image_list[3])
-elif option == item_list[4]:
-st.image(image_list[4])
+if option == 'Accidents reported over years':
+    st.image('visualizations/Accident reported over years.png')
 
 
 # To set the background image of the page

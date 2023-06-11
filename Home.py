@@ -10,22 +10,13 @@ st.markdown(f'<b><h0 style="color:#ffffff;font-size:35px;">{"France Road Acciden
 
 st.markdown(
     """
-    Streamlit is an open-source app framework built specifically for
-    Machine Learning and Data Science projects.
-    **👈 Select a demo from the sidebar** to see some examples
-    of what Streamlit can do!
-    ### Want to learn more?
-    - Check out [streamlit.io](https://streamlit.io)
-    - Jump into our [documentation](https://docs.streamlit.io)
-    - Ask a question in our [community
-        forums](https://discuss.streamlit.io)
-    ### See more complex demos
-    - Use a neural net to [analyze the Udacity Self-driving Car Image
-        Dataset](https://github.com/streamlit/demo-self-driving)
-    - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
-"""
+    In this project it is aimed to analyse the road accidents data in France from 2005 till 2016. The input data contains lot of information about the 
+    accident, users and involved vehicles. The aim would be to predict the severity of the accident - whether the injured person is Slightly Injured/Not injured at all 
+    Vs Heavily Injured/Died.
+    """
 )
 
+# To set the background image of the page
 st.markdown(
          f"""
          <style>

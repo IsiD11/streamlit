@@ -9,7 +9,16 @@ st.set_page_config(
 )
 
 # Content of the page
-st.markdown(f'<b><h0 style="color:#00008B;font-size:35px;">{"Datasets used in this project :"}</h0><br><br>', unsafe_allow_html=True)
+option = st.selectbox(
+    'Choose a data visualization : ',
+    ('Accident severity over years', 'Accidents reported over years', 'Accidents happened in day of week',
+     'Impact of lighting on road accidents', 'Impact of atmospheric conditions on road accidents',
+    'Impact of road category on accidents','Impact of intersection type on accidents','Impact of accident time on severity',
+    'Impact of area zone on severity','Impact of collision type on severity','Impact of surface condition on severity',
+    'Impact of accident situation on severity'))
+
+st.write('You selected:', option)
+
 
 # To set the background image of the page
 st.markdown(

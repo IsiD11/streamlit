@@ -18,7 +18,7 @@ st.markdown(
          f"""
          <style>
          .stApp {{
-             background-image: url("https://images.saymedia-content.com/.image/c_limit%2Ccs_srgb%2Cq_auto:eco%2Cw_700/MTkyOTkyMzE2OTQ2OTE2NTcz/website-background-templates.webp");
+             background-image: url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-63452.jpg?size=626&ext=jpg");
              background-attachment: fixed;
              background-size: cover
          }}

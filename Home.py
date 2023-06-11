@@ -3,6 +3,7 @@ import streamlit as st
 
 st.set_page_config(
     page_title="France Road Accident Data Analysis",
+    layout='wide'
 )
 
 st.write("# France Road Accidents Data Analysis & Severity Prediction ! ")

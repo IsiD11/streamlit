@@ -5,19 +5,8 @@ st.set_page_config(
     page_title="France Road Accident Data Analysis",
     layout='wide'
 )
-st.markdown("""
-<style>
-.big-font {
-    font-size:80px;
-    font-color:#ffffff;
-}
-</style>
-""", unsafe_allow_html=True)
 
-st.markdown('<p class="big-font">France Road Accidents Data Analysis & Severity Prediction !!</p>', unsafe_allow_html=True)
-
-#st.write("France Road Accidents Data Analysis & Severity Prediction !")
-#st.markdown(f'<b><h1 style="color:#ffffff;font-size:24px;">{"France Road Accidents Data Analysis & Severity Prediction !”"}</h1>', unsafe_allow_html=True)
+st.markdown(f'<b><h1 style="color:#ffffff;font-size:24px;">{"France Road Accidents Data Analysis & Severity Prediction !”"}</h1>', unsafe_allow_html=True)
 
 st.markdown(
     """

@@ -8,10 +8,10 @@ st.set_page_config(
 )
 
 st.write("# Road Accidents in France ! 👋")
-st.sidebar.success("Please select a menu.")
 st.markdown(
         """
         The objective of this project is to try to predict the severity of road accidents in France. Predictions will be based on historical data.
         """
 )
 
+st.sidebar.success("Home")

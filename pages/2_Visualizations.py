@@ -4,7 +4,7 @@ import streamlit as st
 
 # Set page title
 st.set_page_config(
-    page_title="France Road Accident Data Analysis - Datasets",
+    page_title="France Road Accident Data Analysis - Datasets new",
     layout='wide'
 )
 

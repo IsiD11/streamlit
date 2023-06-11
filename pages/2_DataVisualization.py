@@ -8,6 +8,8 @@ st.set_page_config(
     layout='wide'
 )
 
+st.markdown(f'<b><h0 style="color:#00008B;font-size:35px;">{"Data Visualizations:"}</h0><br><br>', unsafe_allow_html=True)
+
 # Content of the page
 option = st.selectbox(
     'Choose a data visualization: ',

@@ -8,7 +8,8 @@ st.set_page_config(
 st.markdown("""
 <style>
 .big-font {
-    font-size:300px !important;
+    font-size:80px;
+    font-color:#ffffff;
 }
 </style>
 """, unsafe_allow_html=True)

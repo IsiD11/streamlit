@@ -19,7 +19,9 @@ option = st.selectbox(
     'Impact of area zone on severity','Impact of collision type on severity','Impact of surface condition on severity',
     'Impact of accident situation on severity'))
 
-if option == 'Accidents reported over years':
+if option == 'Accident severity over years':
+    st.image('visualizations/Accident reported over years.png')
+elif option == 'Accidents reported over years':
     st.image('visualizations/Accident reported over years.png')
 
 

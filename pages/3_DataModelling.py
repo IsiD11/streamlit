@@ -16,6 +16,19 @@ option = st.selectbox(
     'Choose a data modelling: ',
     ('XGBoost', 'Gradient Boost', 'Random Forest','AdaBoost'))
 
+df = pd.DataFrame(
+
+    np.random.randn(7, 5),
+
+    columns=('col %d' % i for i in range(5)))
+
+
+
+#displaying the dataframe in a static manner
+
+st.table(df)
+"""
+
 if option == 'XGBoost':
     df_XGBoost = pd.DataFrame(columns=['Accuracy Score Training Set','Accuracy Score Test Set', 'Training Time', 'RMSE Training Set',
                                    'RMSE Test Set', 'Precision - Class 0 (Not injured/Slightly injured) ',
@@ -31,7 +44,7 @@ elif option == 'Random Forest':
     st.write('Random Forest')
 elif option == 'AdaBoost':
     st.write('AdaBoost')
-
+"""
 # To set the background image of the page
 st.markdown(
          f"""

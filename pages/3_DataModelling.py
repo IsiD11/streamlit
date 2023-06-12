@@ -32,6 +32,13 @@ if option == 'Accuracy Score':
     df_AccuracyScore = pd.DataFrame(dict)
     st.table(df_AccuracyScore)
 
+elif option == 'Training Time':
+    dict = {'Model Name':['XGBoost', 'Gradient Boost', 'Random Forest', 'AdaBoost'],
+            'Training Time (sec)':[63.92, 404.98, 112.30, 28.21]
+           }
+    df_TrainingTime = pd.DataFrame(dict)
+    st.table(df_TrainingTime)
+
 # To set the background image of the page
 st.markdown(
          f"""

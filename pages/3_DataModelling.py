@@ -30,7 +30,7 @@ if option == 'Accuracy Score':
             'Test set score':[71.4, 71.4, 66.7, 69.7]
        }
     df_AccuracyScore = pd.DataFrame(dict)
-    st.table(df)
+    st.table(df_AccuracyScore)
 
 # To set the background image of the page
 st.markdown(

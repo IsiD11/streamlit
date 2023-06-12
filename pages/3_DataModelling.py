@@ -18,11 +18,17 @@ option = st.selectbox(
     'Choose a data modelling: ',
     ('XGBoost', 'Gradient Boost', 'Random Forest','AdaBoost'))
 
-df = pd.DataFrame(
 
-    np.random.randn(7, 5),
 
-    columns=('col %d' % i for i in range(5)))
+colsToDisplay = ['Accuracy Score Training Set','Accuracy Score Test Set', 'Training Time', 'RMSE Training Set',
+                 'RMSE Test Set', 'Precision - Class 0 (Not injured/Slightly injured) ',
+                 'Precision - Class 1 (Heavily injured/Died) ',
+                 'Recall - Class 0 (Not injured/Slightly injured) ',
+                 'Recall - Class 1 (Heavily injured/Died) ',
+                 'F1 Score - Class 0 (Not injured/Slightly injured) ',
+                 'F1 Score - Class 1 (Heavily injured/Died) ']
+
+df = pd.DataFrame(np.random.randn(7, 11), columns=colsToDisplay )
 
 
 

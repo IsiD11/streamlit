@@ -20,7 +20,7 @@ option = st.selectbox(
     'Impact of accident situation on severity'))
 
 if option == 'Accident severity over years':
-    st.image('visualizations/Accident severity over years.png')
+    st.image('visualizations/Accident Severity over years.png')
 elif option == 'Accidents reported over years':
     st.image('visualizations/Accident reported over years.png')
 elif option == 'Accidents happened in day of week':
@@ -42,7 +42,7 @@ elif option == 'Impact of collision type on severity':
 elif option == 'Impact of surface condition on severity':
     st.image('visualizations/Impact of surface condition on severity.png')
 elif option == 'Impact of accident situation on severity':
-    st.image('visualizations/Impact of accident situation on severity.png')
+    st.image('visualizations/Impact of surface condition on severity.png')
 
 # To set the background image of the page
 st.markdown(

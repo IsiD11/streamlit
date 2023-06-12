@@ -38,7 +38,40 @@ elif option == 'Training Time':
            }
     df_TrainingTime = pd.DataFrame(dict)
     st.table(df_TrainingTime)
+    
+elif option == 'RMSE':
+    dict = {'Model Name':['XGBoost', 'Gradient Boost', 'Random Forest', 'AdaBoost'],
+            'RMSE Training set':[0.52,0.53,0.29,0.55],
+            'RMSE Test set':[0.53,0.53,0.57,0.55]
+           }
+    df_RMSE = pd.DataFrame(dict)
+    st.table(df_RMSE)
+    
+elif option == 'Precision':
+    dict = {'Model Name':['XGBoost', 'Gradient Boost', 'Random Forest', 'AdaBoost'],
+            'Precision - Class 0 (Not injured/Slightly injured) ':[74,74,72,72],
+            'Precision - Class 1 (Heavily injured/Died) ':[65,65,56,64]
+           }
+    df_Precision = pd.DataFrame(dict)
+    st.table(df_Precision)
+    
+elif option == 'Recall':
+    dict = {'Model Name':['XGBoost', 'Gradient Boost', 'Random Forest', 'AdaBoost'],
+            'Recall - Class 0 (Not injured/Slightly injured) ':[85,85,78,86],
+            'Recall - Class 1 (Heavily injured/Died) ':[48,48,47,42]
+           }
+    df_Recall = pd.DataFrame(dict)
+    st.table(df_Recall)
 
+elif option == 'F1 Score':
+    dict = {'Model Name':['XGBoost', 'Gradient Boost', 'Random Forest', 'AdaBoost'],
+            'F1 Score - Class 0 (Not injured/Slightly injured) ':[79,79,75,78],
+            'F1 Score - Class 1 (Heavily injured/Died) ':[55,56,51,50]
+           }
+    df_F1Score = pd.DataFrame(dict)
+    st.table(df_F1Score)
+
+    
 # To set the background image of the page
 st.markdown(
          f"""

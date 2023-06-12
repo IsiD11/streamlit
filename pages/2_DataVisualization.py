@@ -20,10 +20,29 @@ option = st.selectbox(
     'Impact of accident situation on severity'))
 
 if option == 'Accident severity over years':
-    st.image('visualizations/Accident reported over years.png')
+    st.image('visualizations/Accident severity over years.png')
 elif option == 'Accidents reported over years':
     st.image('visualizations/Accident reported over years.png')
-
+elif option == 'Accidents happened in day of week':
+    st.image('visualizations/Accident happened in day of week.png')
+elif option == 'Impact of lighting on road accidents':
+    st.image('visualizations/Impact of lighting on accidents.png')
+elif option == 'Impact of atmospheric conditions on road accidents':
+    st.image('visualizations/Impact of atmospheric condition on accidents.png')
+elif option == 'Impact of road category on accidents':
+    st.image('visualizations/Impact of road category on accidents.png')    
+elif option == 'Impact of intersection type on accidents':
+    st.image('visualizations/Impact of intersection type on accidents.png')   
+elif option == 'Impact of accident time on severity':
+    st.image('visualizations/Impact of accident time severity.png')
+elif option == 'Impact of area zone on severity':
+    st.image('visualizations/Impact of areazone on severity.png')
+elif option == 'Impact of collision type on severity':
+    st.image('visualizations/Impact of collission type on severity.png')
+elif option == 'Impact of surface condition on severity':
+    st.image('visualizations/Impact of surface condition on severity.png')
+elif option == 'Impact of accident situation on severity'
+    st.image('visualizations/Impact of accident situation on severity.png')
 
 # To set the background image of the page
 st.markdown(

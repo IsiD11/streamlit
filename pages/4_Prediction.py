@@ -31,6 +31,19 @@ if st.button('Predict Accident Severity'):
 else:
     st.write('Predict Accident Severity not clicked') 
 
+    
+st.set_page_config(layout="wide")
+
+st.title('Welcome to DataFlix')
+
+st.subheader('without columns:')
+movie_1 = st.text_input('your favourite movie')
+
+st.subheader('with columns:')
+col1, col2 = st.beta_columns(2)
+with col1:
+    movie = st.text_input('Please enter your favourite movie')
+    
 # To set the background image of the page
 st.markdown(
          f"""

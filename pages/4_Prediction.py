@@ -26,7 +26,11 @@ struckWithMovingObject = st.text_input("Struck With MovingObject")
 initialShockPoint = st.text_input("Initial Shock Point")
 intersectionType = st.text_input("Intersection Type")
 
-    
+if st.button('Predict Accident Severity'):
+    st.write('Predict Accident Severity clicked') 
+else:
+    st.write('Predict Accident Severity not clicked') 
+
 # To set the background image of the page
 st.markdown(
          f"""

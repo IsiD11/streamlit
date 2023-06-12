@@ -15,44 +15,25 @@ st.markdown(f'<b><h0 style="color:#00008B;font-size:35px;">{"Data Modelling:"}</
 
 # Content of the page
 option = st.selectbox(
-    'Choose a data modelling: ',
-    ('XGBoost', 'Gradient Boost', 'Random Forest','AdaBoost'))
+    'Choose a data modelling result criteria: ',
+    ('Accuracy Score', 
+     'Training Time',
+     'RMSE', 
+     'Precision',
+     'Recall',
+     'F1 Score'
+    ))
+    
+if option == 'Accuracy Score':
+    colsToDisplay = ['Model Name',
+                     'Training set score',
+                     'Test set score'
+                    ]
+    
+    df = pd.DataFrame(np.random.randn(4, 3), columns=colsToDisplay )
+    st.table(df)
 
 
-
-colsToDisplay = ['Accuracy Score Training Set','Accuracy Score Test Set', 'Training Time', 'RMSE Training Set',
-                 'RMSE Test Set', 'Precision - Class 0 (Not injured/Slightly injured) ',
-                 'Precision - Class 1 (Heavily injured/Died) ',
-                 'Recall - Class 0 (Not injured/Slightly injured) ',
-                 'Recall - Class 1 (Heavily injured/Died) ',
-                 'F1 Score - Class 0 (Not injured/Slightly injured) ',
-                 'F1 Score - Class 1 (Heavily injured/Died) ']
-
-df = pd.DataFrame(np.random.randn(7, 11), columns=colsToDisplay )
-
-
-
-#displaying the dataframe in a static manner
-
-st.table(df)
-"""
-
-if option == 'XGBoost':
-    df_XGBoost = pd.DataFrame(columns=['Accuracy Score Training Set','Accuracy Score Test Set', 'Training Time', 'RMSE Training Set',
-                                   'RMSE Test Set', 'Precision - Class 0 (Not injured/Slightly injured) ',
-                                   'Precision - Class 1 (Heavily injured/Died) ',
-                                   'Recall - Class 0 (Not injured/Slightly injured) ',
-                                   'Recall - Class 1 (Heavily injured/Died) ',
-                                   'F1 Score - Class 0 (Not injured/Slightly injured) ',
-                                   'F1 Score - Class 1 (Heavily injured/Died) '])
-    st.table(df_XGBoost)
-elif option == 'Gradient Boost':
-    st.write('Gradient Boost')
-elif option == 'Random Forest':
-    st.write('Random Forest')
-elif option == 'AdaBoost':
-    st.write('AdaBoost')
-"""
 # To set the background image of the page
 st.markdown(
          f"""

@@ -25,14 +25,12 @@ option = st.selectbox(
     ))
     
 if option == 'Accuracy Score':
-    colsToDisplay = ['Model Name',
-                     'Training set score',
-                     'Test set score'
-                    ]
-    
-    df = pd.DataFrame(np.random.randn(4, 3), columns=colsToDisplay )
+    dict = {'Model Name':['XGBoost', 'Gradient Boost', 'Random Forest', 'AdaBoost'],
+            'Training set score':[71.99, 71.89, 91.1, 69.5],
+            'Test set score':[71.4, 71.4, 66.7, 69.7]
+       }
+    df_AccuracyScore = pd.DataFrame(dict)
     st.table(df)
-
 
 # To set the background image of the page
 st.markdown(

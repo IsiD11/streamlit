@@ -24,7 +24,7 @@ if option == 'XGBoost':
                                    'Recall - Class 1 (Heavily injured/Died) ',
                                    'F1 Score - Class 0 (Not injured/Slightly injured) ',
                                    'F1 Score - Class 1 (Heavily injured/Died) '])
-st.table(df_XGBoost)
+    st.table(df_XGBoost)
 elif option == 'Gradient Boost':
     st.write('Gradient Boost')
 elif option == 'Random Forest':

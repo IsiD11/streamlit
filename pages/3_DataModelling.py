@@ -2,6 +2,7 @@
 ### This is the data modelling subpage of streamlit webapp
 
 import streamlit as st
+import pandas as pd
 
 # Set page title
 st.set_page_config(

@@ -42,7 +42,7 @@ elif option == 'Impact of collision type on severity':
 elif option == 'Impact of surface condition on severity':
     st.image('visualizations/Impact of surface condition on severity.png')
 elif option == 'Impact of accident situation on severity':
-    st.image('visualizations/Impact of surface condition on severity.png')
+    st.image('visualizations/Impact of accident situation on severity.png')
 
 # To set the background image of the page
 st.markdown(

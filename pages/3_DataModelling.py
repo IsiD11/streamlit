@@ -16,8 +16,14 @@ option = st.selectbox(
     'Choose a data modelling: ',
     ('XGBoost', 'Gradient Boost', 'Random Forest','AdaBoost'))
 
-if option == 'Accident severity over years':
-    st.image('visualizations/Accident Severity over years.png')
+if option == 'XGBoost':
+    st.write('XGBoost')
+elif option == 'Gradient Boost':
+    st.write('Gradient Boost')
+elif option == 'Random Forest':
+    st.write('Random Forest')
+elif option == 'AdaBoost':
+    st.write('AdaBoost')
 
 # To set the background image of the page
 st.markdown(

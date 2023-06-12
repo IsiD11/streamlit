@@ -24,7 +24,7 @@ if option == 'Accident severity over years':
 elif option == 'Accidents reported over years':
     st.image('visualizations/Accident reported over years.png')
 elif option == 'Accidents happened in day of week':
-    st.image('visualizations/Accident happened in day of week.png')
+    st.image('visualizations/Accident happened in day of week - Copy.png')
 elif option == 'Impact of lighting on road accidents':
     st.image('visualizations/Impact of lighting on accidents.png')
 elif option == 'Impact of atmospheric conditions on road accidents':

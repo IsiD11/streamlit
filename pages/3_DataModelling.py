@@ -17,7 +17,14 @@ option = st.selectbox(
     ('XGBoost', 'Gradient Boost', 'Random Forest','AdaBoost'))
 
 if option == 'XGBoost':
-    st.write('XGBoost')
+    df_XGBoost = pd.DataFrame(columns=['Accuracy Score Training Set','Accuracy Score Test Set', 'Training Time', 'RMSE Training Set',
+                                   'RMSE Test Set', 'Precision - Class 0 (Not injured/Slightly injured) ',
+                                   'Precision - Class 1 (Heavily injured/Died) ',
+                                   'Recall - Class 0 (Not injured/Slightly injured) ',
+                                   'Recall - Class 1 (Heavily injured/Died) ',
+                                   'F1 Score - Class 0 (Not injured/Slightly injured) ',
+                                   'F1 Score - Class 1 (Heavily injured/Died) '])
+st.table(df_XGBoost)
 elif option == 'Gradient Boost':
     st.write('Gradient Boost')
 elif option == 'Random Forest':

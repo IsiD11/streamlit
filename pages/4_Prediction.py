@@ -26,12 +26,20 @@ struckWithMovingObject = st.text_input("Struck With MovingObject")
 initialShockPoint = st.text_input("Initial Shock Point")
 intersectionType = st.text_input("Intersection Type")
 
+    
+#Loading up the XGBoost model we created
+model = xgb.XGBRegressor()
+model.load_model('Models/xgb_model.json')
+
+#Caching the model for faster loading
+@st.cache
+
 if st.button('Predict Accident Severity'):
-    st.write('Predict Accident Severity clicked') 
+    prediction = model.predict(pd.DataFrame([[areaZone, collisionType, municipality, roadCategory, trafficRegime, nrOfTrafficLanes, accidentSituation, struckWithFixedObject, struckWithMovingObject, initialShockPoint, intersectionType ]], columns=[areaZone, collisionType, municipality, roadCategory, trafficRegime, nrOfTrafficLanes, accidentSituation, struckWithFixedObject, struckWithMovingObject, initialShockPoint, intersectionType]))
+    st.write('Predict Accident Severity clicked : ', prediction) 
 else:
     st.write('Predict Accident Severity not clicked') 
    
-    
 # To set the background image of the page
 st.markdown(
          f"""

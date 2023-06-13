@@ -28,6 +28,9 @@ initialShockPoint = st.text_input("Initial Shock Point")
 intersectionType = st.text_input("Intersection Type")
 
     
+#Loading up the XGBoost model we created
+model = xgb.XGBClassifier()
+model.load_model('Models/xgb_model.json')
 
 if st.button('Predict Accident Severity'):
     prediction = model.predict(pd.DataFrame([[areaZone, collisionType, municipality, roadCategory, trafficRegime, nrOfTrafficLanes, accidentSituation, struckWithFixedObject, struckWithMovingObject, initialShockPoint, intersectionType ]], columns=[areaZone, collisionType, municipality, roadCategory, trafficRegime, nrOfTrafficLanes, accidentSituation, struckWithFixedObject, struckWithMovingObject, initialShockPoint, intersectionType]))

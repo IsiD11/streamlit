@@ -1,4 +1,3 @@
-pip install xgboost
 ### This is the prediction subpage of streamlit webapp
 
 import streamlit as st
@@ -30,7 +29,7 @@ intersectionType = st.text_input("Intersection Type")
 
     
 #Loading up the XGBoost model we created
-model = xgb.XGBRegressor()
+model = xgb.XGBClassifier()
 model.load_model('Models/xgb_model.json')
 
 if st.button('Predict Accident Severity'):

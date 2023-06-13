@@ -31,9 +31,6 @@ intersectionType = st.text_input("Intersection Type")
 model = xgb.XGBRegressor()
 model.load_model('Models/xgb_model.json')
 
-#Caching the model for faster loading
-@st.cache
-
 if st.button('Predict Accident Severity'):
     prediction = model.predict(pd.DataFrame([[areaZone, collisionType, municipality, roadCategory, trafficRegime, nrOfTrafficLanes, accidentSituation, struckWithFixedObject, struckWithMovingObject, initialShockPoint, intersectionType ]], columns=[areaZone, collisionType, municipality, roadCategory, trafficRegime, nrOfTrafficLanes, accidentSituation, struckWithFixedObject, struckWithMovingObject, initialShockPoint, intersectionType]))
     st.write('Predict Accident Severity clicked : ', prediction) 

@@ -4,6 +4,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import xgboost as xgb
+from xgboost import XGBClassifier
 
 # Set page title
 st.set_page_config(

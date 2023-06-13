@@ -1,3 +1,4 @@
+python setup.py install
 ### This is the prediction subpage of streamlit webapp
 import streamlit as st
 import pandas as pd

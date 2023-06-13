@@ -1,4 +1,4 @@
-
+!pip install xgboost
 ### This is the prediction subpage of streamlit webapp
 
 import streamlit as st

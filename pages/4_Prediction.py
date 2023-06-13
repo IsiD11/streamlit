@@ -1,5 +1,5 @@
 ### This is the prediction subpage of streamlit webapp
-
+pip install xgboost
 import streamlit as st
 import pandas as pd
 import numpy as np

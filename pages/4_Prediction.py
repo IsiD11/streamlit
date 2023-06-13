@@ -15,17 +15,17 @@ st.set_page_config(
 st.markdown(f'<b><h0 style="color:#00008B;font-size:35px;">{"Prediction:"}</h0><br><br>', unsafe_allow_html=True)
 
 # Content of the page
-areaZone = st.text_input("Area Zone")
-collisionType = st.text_input("Collision Type")
-municipality = st.text_input("Municipality")
-roadCategory = st.text_input("Road Category")
-trafficRegime = st.text_input("Traffic Regime")
-nrOfTrafficLanes = st.text_input("Number Of Traffic Lanes")
-accidentSituation = st.text_input("Accident Situation")
-struckWithFixedObject = st.text_input("Struck With Fixed Object")
-struckWithMovingObject = st.text_input("Struck With MovingObject")
-initialShockPoint = st.text_input("Initial Shock Point")
-intersectionType = st.text_input("Intersection Type")
+areaZone = st.number_input("Area Zone")
+collisionType = st.number_input("Collision Type")
+municipality = st.number_input("Municipality")
+roadCategory = st.number_input("Road Category")
+trafficRegime = st.number_input("Traffic Regime")
+nrOfTrafficLanes = st.number_input("Number Of Traffic Lanes")
+accidentSituation = st.number_input("Accident Situation")
+struckWithFixedObject = st.number_input("Struck With Fixed Object")
+struckWithMovingObject = st.number_input("Struck With MovingObject")
+initialShockPoint = st.number_input("Initial Shock Point")
+intersectionType = st.number_input("Intersection Type")
 
     
 #Loading up the XGBoost model we created

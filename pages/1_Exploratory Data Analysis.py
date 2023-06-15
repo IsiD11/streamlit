@@ -1,12 +1,28 @@
+# This page deals with the exploratory data analysis 
+
 import pandas as pd
 import pandas_profiling
 import streamlit as st
 
 from streamlit_pandas_profiling import st_profile_report
 
-# Content of the page
-st.markdown(f'<b><h0 style="color:#000000;font-size:35px;">{"France Road Accidents Data Analysis & Severity Prediction !"}</h0><br>', unsafe_allow_html=True)
+# Heading of the page
+st.markdown(f'<b><h0 style="color:#000000;font-size:35px;">{"Exploratory Data Analysis!"}</h0><br>', unsafe_allow_html=True)
 
+# To set the background image of the page
+st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-63452.jpg?size=626&ext=jpg");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+"""
 uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is not None:
   df = pd.read_csv(uploaded_file).sample(n=1000)
@@ -14,3 +30,4 @@ if uploaded_file is not None:
 pr = df.profile_report()
 
 st_profile_report(pr)
+"""

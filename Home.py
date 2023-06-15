@@ -9,11 +9,14 @@ st.set_page_config(
 
 # Content of the page
 st.markdown(f'<b><h0 style="color:#000000;font-size:35px;">{"France Road Accidents Data Analysis & Severity Prediction !"}</h0><br><br>', unsafe_allow_html=True)
-#st.markdown(f'<b><h1 style="color:#000000;font-size:25px;">{"In this project it is aimed to analyse the road accidents data in France from 2005 till 2016. The input data contains lot of information about the  accident, users and involved vehicles. The aim would be to predict the severity of the accident - whether the injured person is Slightly Injured/Not injured at all Vs Heavily Injured/Died."}</h1><br><br>', unsafe_allow_html=True)
 
-
-# To set the background image of the page
+# To insert image
 st.image(
             "https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg",
             width=1000, # Manually Adjust the width of the image as per requirement
         )
+
+# To insert textual content 
+#st.markdown(f'<b><h1 style="color:#000000;font-size:25px;">{"In recent years, road accidents have been a significant cause of concern worldwide, leading to tragic loss of life, injuries, and economic burden. France, like many other countries, strives to enhance road safety and reduce the severity of accidents. To achieve this goal, harnessing the power of data science methods has become increasingly important. By utilizing data-driven approaches, we can gain valuable insights into the factors contributing to the severity of road accidents in France. We believe that machine learning and deep learning are good ools to reduce or prevent some road accidents in applying preventive actions using AI solutions.The objective of this project is to try to predict the severity of road accidents in France using historical data. By analyzing past records, the aim is to develop a predictive model that can estimate the severity of accidents. This project presents an ideal opportunity to encompass all stages of a comprehensive Data Science project."}</h1><br><br>', unsafe_allow_html=True)
+
+

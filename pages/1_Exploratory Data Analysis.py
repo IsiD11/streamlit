@@ -9,8 +9,7 @@ st.set_page_config(
     page_title="Exploratory Data Analysis",
     layout='wide'
 )
-st.markdown(f'<b><h0 style="color:#00008B;font-size:35px;">{"Exploratory Data Analysis:"}</h0><br><br>', unsafe_allow_html=True)
-    
+ 
 # To set the background image of the page
 st.markdown(
          f"""

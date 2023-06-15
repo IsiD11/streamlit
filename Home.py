@@ -16,17 +16,3 @@ st.image(
             "https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg",
             width=400, # Manually Adjust the width of the image as per requirement
         )
-"""
-st.markdown(
-         f"""
-         <style>
-         .stApp {{
-             background-image: url("https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg");
-             background-attachment: fixed;
-             background-size: cover
-         }}
-         </style>
-         """,
-         unsafe_allow_html=True
-     )
-"""

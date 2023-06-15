@@ -11,7 +11,7 @@ st.markdown(f'<b><h0 style="color:#000000;font-size:35px;">{"Exploratory Data An
 
 # To set the background image of the page
 st.markdown(
-         f"""
+         f
          <style>
          .stApp {{
              background-image: url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-63452.jpg?size=626&ext=jpg");
@@ -19,6 +19,6 @@ st.markdown(
              background-size: cover
          }}
          </style>
-         """,
+         ,
          unsafe_allow_html=True
      )

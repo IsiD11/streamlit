@@ -1,5 +1,4 @@
 ### This is the exploratory data analysis subpage of streamlit webapp 
-pip install git+https://github.com/DeepaNMS/streamlit.git
     
     
 import streamlit as st

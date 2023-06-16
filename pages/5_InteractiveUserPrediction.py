@@ -150,13 +150,13 @@ elif strstruckWithFixedObject == 'Sidewalk curb' :
    struckWithFixedObject = 12
 elif strstruckWithFixedObject == 'Ditch, embankment, rock wall' :
    struckWithFixedObject = 13
-if strstruckWithFixedObject == 'Other fixed obstacle on roadway' :
+elif strstruckWithFixedObject == 'Other fixed obstacle on roadway' :
    struckWithFixedObject = 14
-if strstruckWithFixedObject == 'Other fixed obstacle on sidewalk or shoulder' :
+elif strstruckWithFixedObject == 'Other fixed obstacle on sidewalk or shoulder' :
    struckWithFixedObject = 15
-if strstruckWithFixedObject == 'Obstacle-free road exit' :
+elif strstruckWithFixedObject == 'Obstacle-free road exit' :
    struckWithFixedObject = 16
-if strstruckWithFixedObject == 'Nozzle – aqueduct head' :
+elif strstruckWithFixedObject == 'Nozzle – aqueduct head' :
    struckWithFixedObject = 17
 
 
@@ -167,18 +167,45 @@ strstruckWithMovingObject = st.selectbox(
 
 if strstruckWithMovingObject == 'None' :
    struckWithMovingObject = 0
+if strstruckWithMovingObject == 'Pedestrian' :
+   struckWithMovingObject = 1
+if strstruckWithMovingObject == 'Vehicle' :
+   struckWithMovingObject = 2
+if strstruckWithMovingObject == 'Rail vehicle' :
+   struckWithMovingObject = 4
+if strstruckWithMovingObject == 'Pet' :
+   struckWithMovingObject = 5
+if strstruckWithMovingObject == 'Wild animal' :
+   struckWithMovingObject = 6
+if strstruckWithMovingObject == 'Other' :
+   struckWithMovingObject = 9
 
-0 – None
-1 – Pedestrian
-2 – Vehicle
-4 – Rail vehicle
-5 – Pet
-6 – Wild animal
-9 – Other
 
 ##### INITIALSHOCKPOINT
-initialShockPoint = st.number_input("Initial Shock Point")
-intersectionType = st.number_input("Intersection Type")
+strinitialShockPoint = st.selectbox(
+                        'Initial Shock Point :',
+                        ('None','Before','Front right','Front left','Back','Right back','Left Rear','Right side','Left side','Multiple shocks (barrels)'))
+
+if strinitialShockPoint == 'None' :
+   initialShockPoint = 0
+if strinitialShockPoint == 'Before' :
+   initialShockPoint = 1
+if strinitialShockPoint == 'Front right' :
+   initialShockPoint = 2
+if strinitialShockPoint == 'Front left' :
+   initialShockPoint = 3
+if strinitialShockPoint == 'Back' :
+   initialShockPoint = 4
+if strinitialShockPoint == 'Right back' :
+   initialShockPoint = 5
+if strinitialShockPoint == 'Left Rear' :
+   initialShockPoint = 6
+if strinitialShockPoint == 'Right side' :
+   initialShockPoint = 7
+if strinitialShockPoint == 'Left side' :
+   initialShockPoint = 8
+if strinitialShockPoint == 'Multiple shocks (barrels)' :
+   initialShockPoint = 9
 
     
 #Loading up the XGBoost model we created

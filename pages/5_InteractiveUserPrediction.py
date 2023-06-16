@@ -15,6 +15,11 @@ st.set_page_config(
 st.markdown(f'<b><h0 style="color:#00008B;font-size:35px;">{"Prediction:"}</h0><br><br>', unsafe_allow_html=True)
 
 # Content of the page
+areaZone = st.selectbox(
+                        'Area Zone :',
+                        ('Outside agglomeration', 'In built up areas'))
+
+
 areaZone = st.number_input("Area Zone")
 collisionType = st.number_input("Collision Type")
 municipality = st.number_input("Municipality")

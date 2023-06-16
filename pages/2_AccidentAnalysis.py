@@ -37,9 +37,9 @@ elif option == 'Accidents happened in day of week':
     st.markdown(f'<p align="justify" font-family: "Times New Roman" style="color:#000000;">{"- Friday is more prone to accidents while Sunday is the day with least number of accidents."}</p>', unsafe_allow_html=True)
     st.image('visualizations/Accident happened in day of week - Copy.png')
 elif option == 'Impact of lighting on road accidents':
-    st.image('visualizations/Impact of lighting on accidents.png')
     st.markdown(f'<p align="justify" font-family: "Times New Roman" style="color:#000000;"><b>{"Observations:"}</b></p>', unsafe_allow_html=True)
     st.markdown(f'<p align="justify" font-family: "Times New Roman" style="color:#000000;">{"- Lighting does not have an impact on the number of accidents as most of the accidents happened during day time."}</p>', unsafe_allow_html=True)
+    st.image('visualizations/Impact of lighting on accidents.png')
 elif option == 'Impact of atmospheric conditions on road accidents':
     st.markdown(f'<p align="justify" font-family: "Times New Roman" style="color:#000000;"><b>{"Observations:"}</b></p>', unsafe_allow_html=True)
     st.markdown(f'<p align="justify" font-family: "Times New Roman" style="color:#000000;">{"- Could not see much impact of atmospheric condition on accidents, as most of the accidents happened during normal atmospheric condition."}</p>', unsafe_allow_html=True)

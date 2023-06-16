@@ -1,6 +1,7 @@
 ### This is the exploratory data analysis subpage of streamlit webapp 
-pip install streamlit_pandas_profiling
-
+pip install git+https://github.com/tangentlabs/django-oscar-paypal.git@issue/34/oscar-0.6
+    
+    
 import streamlit as st
 import pandas as pd
 import numpy as np

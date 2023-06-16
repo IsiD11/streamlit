@@ -207,7 +207,32 @@ if strinitialShockPoint == 'Left side' :
 if strinitialShockPoint == 'Multiple shocks (barrels)' :
    initialShockPoint = 9
 
-    
+##### INTERSECTIONTYPE
+strintersectionType = st.selectbox(
+                        'Intersection Type :',
+                        ('Out of intersection','X intersection','T-junction','Y intersection','Intersection with more than 4 branches',
+                         'Roundabout','Square','Level crossing','Other intersection'))
+
+if strintersectionType == 'Out of intersection' :
+   intersectionType = 1
+if strintersectionType == 'X intersection' :
+   intersectionType = 2
+if strintersectionType == 'T-junction' :
+   intersectionType = 3
+if strintersectionType == 'Y intersection' :
+   intersectionType = 4
+if strintersectionType == 'Intersection with more than 4 branches' :
+   intersectionType = 5
+if strintersectionType == 'Roundabout' :
+   intersectionType = 6
+if strintersectionType == 'Square' :
+   intersectionType = 7
+if strintersectionType == 'Level crossing' :
+   intersectionType = 8
+if strintersectionType == 'Other intersection' :
+   intersectionType = 9
+
+
 #Loading up the XGBoost model we created
 
 xgb_cl = xgb.XGBClassifier()

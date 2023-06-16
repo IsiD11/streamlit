@@ -17,8 +17,7 @@ st.markdown(f'<b><h0 style="color:#00008B;font-size:35px;">{"Data Modelling:"}</
 option = st.selectbox(
     'Choose a data modelling result criteria: ',
     ('Accuracy Score', 
-     'Training Time',
-     'RMSE', 
+     'Training Time', 
      'Precision',
      'Recall',
      'F1 Score'
@@ -38,14 +37,6 @@ elif option == 'Training Time':
            }
     df_TrainingTime = pd.DataFrame(dict)
     st.table(df_TrainingTime)
-    
-elif option == 'RMSE':
-    dict = {'Model Name':['XGBoost', 'Gradient Boost', 'Random Forest', 'AdaBoost'],
-            'RMSE Training set':[0.52,0.53,0.29,0.55],
-            'RMSE Test set':[0.53,0.53,0.57,0.55]
-           }
-    df_RMSE = pd.DataFrame(dict)
-    st.table(df_RMSE)
     
 elif option == 'Precision':
     dict = {'Model Name':['XGBoost', 'Gradient Boost', 'Random Forest', 'AdaBoost'],

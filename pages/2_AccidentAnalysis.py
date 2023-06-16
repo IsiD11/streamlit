@@ -22,7 +22,10 @@ option = st.selectbox(
 st.markdown(f'<br>', unsafe_allow_html=True)
 if option == 'Accident severity over years':
     # List down the observations
-    st.markdown(f'<p align="justify" font-family: "Times New Roman" style="color:#000000;">{"Observations:"}</p><br>', unsafe_allow_html=True)
+    st.markdown(f'<p align="justify" font-family: "Times New Roman" style="color:#000000;"><b>{"Observations:"}</b></p><br>', unsafe_allow_html=True)
+    st.markdown(f'<p align="justify" font-family: "Times New Roman" style="color:#000000;">{"- Death rate in accidents is slightly getting reduced over years."}</p><br>', unsafe_allow_html=True)
+    st.markdown(f'<p align="justify" font-family: "Times New Roman" style="color:#000000;">{"- Number of accidents also show a reducing trend over years."}</p><br>', unsafe_allow_html=True)
+    
     st.image('visualizations/Accident Severity over years.png')
 elif option == 'Accidents reported over years':
     st.image('visualizations/Accident reported over years.png')

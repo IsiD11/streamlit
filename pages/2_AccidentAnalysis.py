@@ -50,7 +50,7 @@ elif option == 'Impact of road category on accidents':
     st.image('visualizations/Impact of road category on accidents.png')    
 elif option == 'Impact of intersection type on accidents':
     st.markdown(f'<p align="justify" font-family: "Times New Roman" style="color:#000000;"><b>{"Observations:"}</b></p>', unsafe_allow_html=True)
-    st.markdown(f'<p align="justify" font-family: "Times New Roman" style="color:#000000;">{"- Among the intersection types 'Out of the intersection', 'X-intersection' and 'T-junction' are more prone to accidents."}</p>', unsafe_allow_html=True)
+    st.markdown(f'<p align="justify" font-family: "Times New Roman" style="color:#000000;">{"- Among the intersection types Out of the intersection, X-intersection and T-junction are more prone to accidents."}</p>', unsafe_allow_html=True)
     st.image('visualizations/Impact of intersection type on accidents.png')   
 elif option == 'Impact of accident time on severity':
     st.markdown(f'<p align="justify" font-family: "Times New Roman" style="color:#000000;"><b>{"Observations:"}</b></p>', unsafe_allow_html=True)

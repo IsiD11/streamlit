@@ -31,11 +31,7 @@ st.markdown(
      )
 # This page deals with the exploratory data analysis 
 
-X_test_file = ""uploaded_file = st.file_uploader("Choose a file")
-if uploaded_file is not None:
-  df = pd.read_csv(uploaded_file).sample(n=1000)
-  
+X_test_file = "Datasets/X_test.csv"
+df = pd.read_csv(X_test_file)  
 pr = df.profile_report()
-
 st_profile_report(pr)
-"""

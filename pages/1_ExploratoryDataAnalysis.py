@@ -1,5 +1,5 @@
 ### This is the exploratory data analysis subpage of streamlit webapp 
-pip install git+https://github.com/tangentlabs/django-oscar-paypal.git@issue/34/oscar-0.6
+pip install git+https://github.com/DeepaNMS/streamlit.git
     
     
 import streamlit as st

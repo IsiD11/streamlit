@@ -1,5 +1,6 @@
 ### This is the main page of the web app .
 import streamlit as st
+import base64
 
 # Set page title
 st.set_page_config(
@@ -7,14 +8,44 @@ st.set_page_config(
     layout='wide'
 )
 
-# Content of the page
-st.markdown(f'<b><h0 style="color:#000000;font-size:35px;">{"France Road Accidents Data Analysis & Severity Prediction !"}</h0><br>', unsafe_allow_html=True)
+# # Content of the page
+# st.markdown(f'<b><h0 style="color:#000000;font-size:35px;">{"France Road Accidents Data Analysis & Severity Prediction !"}</h0><br>', unsafe_allow_html=True)
 
-# To insert image
-st.image(
-            "https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg",
-            width=900, # Manually Adjust the width of the image as per requirement
+# # To insert image
+# st.image(
+#             "https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg",
+#             width=900, # Manually Adjust the width of the image as per requirement
         )
+
+st.write("# Road Accidents in France #")
+st.sidebar.success("Select pages")   
+       
+st.image("https://upload.wikimedia.org/wikipedia/commons/2/2f/Multi_vehicle_accident_-_M4_Motorway%2C_Sydney%2C_NSW_%288076208846%29.jpg",
+            width=700 # Manually Adjust the width of the image as per requirement
+        )
+st.markdown("""
+        **👈 Select the page from the dropdown on the left** to select : EDA, Dataviz, Modelling 
+        or Shap Interpretation!
+         ### Summary of our main tasks done to use Streamlit /GitHub
+            - we prepared the data set to gain some memory
+            - we select the road accident from 2012-2015
+            - we kept road accident 2016 seperately to compare with our prediction
+            - we did run the classification non-linear models: GBC - RFC - KNN - SVC - (XGBOOST?)
+            - EDA and Dataviz are using road accidents from 2012 to 2016 
+            
+         ### Team
+
+        - Deepa
+        - Fan
+        - Sidi
+        
+        Tutoring : Francesco
+        
+    """
+    )
+
+st.markdown("![Alt Text](https://media.tenor.com/tuArNck3bKwAAAAC/car-crash.gif)")
+
 
 # To insert textual content 
 
@@ -23,6 +54,3 @@ st.markdown(f'<p align="justify" font-family: "Times New Roman" style="color:#00
 st.markdown(f'<p align="justify" font-family: "Times New Roman" style="color:#000000;">{"The initial step involves studying and implementing methods to clean the dataset. This process includes identifying and rectifying any errors, inconsistencies, or missing values present in the dataset. By ensuring the dataquality and reliability, subsequent analysis can conduct to a greater model performance accuracy."}</p><br>', unsafe_allow_html=True)
 st.markdown(f'<p align="justify" font-family: "Times New Roman" style="color:#000000;">{"The next step focuses on extracting relevant characteristics from the historical data. This involves examining the various attributes and factors associated with accidents, such as weather conditions, geographical location, and other related information. By identifying the most influential features, the objective is to develop a robust model that can effectively estimate the severity of accidents based on key features."}</p><br><br><br>', unsafe_allow_html=True)
 st.markdown(f'<p align="right" font-family: "Times New Roman" style="color:#000000;">{"TEAM - Sidi Niare, Fan Bu, Deepa Nair M S"}</p><br>', unsafe_allow_html=True)
-
-
-

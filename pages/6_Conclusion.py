@@ -1,1 +1,8 @@
 
+During our comprehensive data analysis of road accident severity predictions in France, we employed four different classification models to conduct the analysis. These models allowed us to evaluate and compare the performance of each model in predicting the severity of traffic accidents. After analyzing the results, we determined that the XGBoost model outperformed the other models in terms of accuracy and overall predictive capability.
+
+To gain a better understanding of the factors influencing the prediction outcomes, we utilized two popular interpretation techniques: LIME and SHAP. LIME (Local Interpretable Model-agnostic Explanations) provided us with local explanations for individual predictions, highlight-ing the specific variables that had the most influence on each prediction. By examining the LIME explanations, we were able to identify which variables contributed positively or negatively to the prediction results for each instance.
+
+Additionally, we employed SHAP (SHapley Additive exPlanations) to gain a more comprehen-sive understanding of variable importance. SHAP values helped us determine the overall im-pact of each variable across the entire dataset. This allowed us to identify the variables that consistently had a significant positive or negative contribution to the prediction outcomes.
+
+By combining the insights gained from LIME and SHAP, we were able to extract valuable in-formation about the relationship between input features and the severity of road accidents. This analysis not only provided us with a deeper understanding of the underlying factors influencing accident severity but also enabled us to make more informed decisions and recommendations for accident prevention and mitigation strategies in France.

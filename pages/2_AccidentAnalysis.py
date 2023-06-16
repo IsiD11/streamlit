@@ -12,7 +12,7 @@ st.markdown(f'<b><h0 style="color:#00008B;font-size:35px;">{"Data Visualizations
 
 # Content of the page
 option = st.selectbox(
-    '<b>Choose a data visualization:<b> ',
+    'Choose a data visualization:',
     ('Accident severity over years', 'Accidents reported over years', 'Accidents happened in day of week',
      'Impact of lighting on road accidents', 'Impact of atmospheric conditions on road accidents',
     'Impact of road category on accidents','Impact of intersection type on accidents','Impact of accident time on severity',
@@ -22,6 +22,9 @@ option = st.selectbox(
 st.markdown(f'<br>', unsafe_allow_html=True)
 if option == 'Accident severity over years':
     st.image('visualizations/Accident Severity over years.png')
+    # List down the observations
+    st.markdown(f'<b><p align="justify" font-family: "Times New Roman" style="color:#000000;"><br>{"Observations :"}</p></b><br>', unsafe_allow_html=True)
+
 elif option == 'Accidents reported over years':
     st.image('visualizations/Accident reported over years.png')
 elif option == 'Accidents happened in day of week':
@@ -59,7 +62,6 @@ st.markdown(
          unsafe_allow_html=True
      )
 
-# List down the observations
 
 
 

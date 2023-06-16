@@ -59,7 +59,7 @@ elif option == 'Impact of accident time on severity':
     st.image('visualizations/Impact of accident time severity.png')
 elif option == 'Impact of area zone on severity':
     st.markdown(f'<p align="justify" font-family: "Times New Roman" style="color:#000000;"><b>{"Observations:"}</b></p>', unsafe_allow_html=True)
-    st.markdown(f'<p align="justify" font-family: "Times New Roman" style="color:#000000;">{"- It looks areazone = 2 ( in built up areas ) is more prone to accidents."}</p>', unsafe_allow_html=True)
+    st.markdown(f'<p align="justify" font-family: "Times New Roman" style="color:#000000;">{"- It looks areazone In built up areas is more prone to accidents."}</p>', unsafe_allow_html=True)
     st.image('visualizations/Impact of areazone on severity.png')
 elif option == 'Impact of collision type on severity':
     st.markdown(f'<p align="justify" font-family: "Times New Roman" style="color:#000000;"><b>{"Observations:"}</b></p>', unsafe_allow_html=True)

@@ -1,4 +1,5 @@
 ### This is the exploratory data analysis subpage of streamlit webapp 
+pip install streamlit_pandas_profiling
 
 import streamlit as st
 import pandas as pd

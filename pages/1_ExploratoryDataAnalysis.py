@@ -3,6 +3,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+from streamlit_pandas_profiling import st_profile_report
+import pandas_profiling
 
 # Set page title
 st.set_page_config(
@@ -27,3 +29,13 @@ st.markdown(
          """,
          unsafe_allow_html=True
      )
+# This page deals with the exploratory data analysis 
+
+X_test_file = ""uploaded_file = st.file_uploader("Choose a file")
+if uploaded_file is not None:
+  df = pd.read_csv(uploaded_file).sample(n=1000)
+  
+pr = df.profile_report()
+
+st_profile_report(pr)
+"""

@@ -8,7 +8,7 @@ st.set_page_config(
     layout='wide'
 )
 
-st.markdown(f'<b><h0 style="color:#00008B;font-size:35px;">{"Data Visualizations:"}</h0><br><br>', unsafe_allow_html=True)
+st.markdown(f'<b><h0 style="color:#00008B;font-size:35px;">{"Data Visualizations:"}</h0><br>', unsafe_allow_html=True)
 
 # Content of the page
 option = st.selectbox(
@@ -21,10 +21,9 @@ option = st.selectbox(
 
 st.markdown(f'<br>', unsafe_allow_html=True)
 if option == 'Accident severity over years':
-    st.image('visualizations/Accident Severity over years.png')
     # List down the observations
     st.markdown(f'<b><p align="justify" font-family: "Times New Roman" style="color:#000000;"><br>{"Observations :"}</p></b><br>', unsafe_allow_html=True)
-
+   st.image('visualizations/Accident Severity over years.png')
 elif option == 'Accidents reported over years':
     st.image('visualizations/Accident reported over years.png')
 elif option == 'Accidents happened in day of week':

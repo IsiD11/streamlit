@@ -28,7 +28,7 @@ st.write("""Generally speaking we can consider that accuracy scores:
                     - Between 70% and 90% - Good
                     - Between 60% and 70% - OK""")
 
-choices = ['XGBOOST','XGBOOST improved','Gradient Boosting','Gradient Boosting improved']
+choices = ['XGBOOST','XGBOOST Improved','Gradient Boosting','Gradient Boosting Improved']
 #choices = ['Gradient Boosting']
 option = st.selectbox(
          'Which model do you want to try ?',
@@ -49,17 +49,15 @@ if df is not None:
     y_test =df['severity']
     X_test = df.drop(['severity','Unnamed: 0'], axis = 1)
 
- 
-
 if option=='Gradient Boosting':
    st.write('Gradient Boosting score train 69.96')
-   GBC=joblib.load('Models/gbcwohyperparms.dat')
-   results(GBC)
+   #GBC=joblib.load('Models/gbcwohyperparms.dat')
+   #results(GBC)
 
 if option=='Gradient Boosting improved':
    st.write('Gradient Boosting score train 71.894')
-   GBCi=joblib.load('Models/gbc.dat')
-   results(GBCi)
+   #GBCi=joblib.load('Models/gbc.dat')
+   #results(GBCi)
 
 
 if option=='XGBOOST':

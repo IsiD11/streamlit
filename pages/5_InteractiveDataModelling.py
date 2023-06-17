@@ -7,6 +7,7 @@ import joblib
 import sklearn
 import xgboost as xgb
 from xgboost import XGBClassifier
+from sklearn.metrics import accuracy_score
 
 def results(model):
     st.markdown('## Accuracy')
@@ -15,6 +16,15 @@ def results(model):
     st.dataframe(confusion_matrix(y_test, model.predict(X_test)))
     st.markdown('## Classification Report')
     st.text(classification_report(y_test, model.predict(X_test)))
+
+def results1(model):
+    st.markdown('## Accuracy')
+    y_pred = model.predict(X_test)
+    st.write(accuracy_score(y_test,y_pred))
+    st.markdown('## Confusion Matrix')
+    st.dataframe(confusion_matrix(y_test, y_pred))
+    st.markdown('## Classification Report')
+    st.text(classification_report(y_test, y_pred))
 
 def splitDataset(df):
    y_test =df['severity']
@@ -67,11 +77,11 @@ if option=='XGBOOST':
    st.write('XGBOOST score train 71.998')
    xgb = xgb.XGBClassifier()
    xgb.load_model('Models/xgb_model.json')
-   results(xgb)
+   results1(xgb)
 
 
 if option=='XGBOOST Improved':
    st.write('XGBOOST score train 72.052')
    xgb_imp = xgb.XGBClassifier()
    xgb_imp.load_model('Models/xgb_model_improved.json')
-   results(xgb_imp) 
+   results1(xgb_imp) 

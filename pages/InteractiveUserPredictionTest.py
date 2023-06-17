@@ -237,6 +237,7 @@ modelToUse = st.radio("Select the model : ",('XGBoost','GradientBoost','RandomFo
 
 if modelToUse == 'XGBoost':
   #Loading up the XGBoost model we created
+  model = xgb.XGBClassifier()
   model.load_model('Models/xgb_model.json')
 
 

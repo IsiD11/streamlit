@@ -11,9 +11,13 @@ st.set_page_config(
 st.markdown(f'<b><h0 style="color:#000000;font-size:35px;">{"France Road Accidents Data Analysis & Severity Prediction !"}</h0><br>', unsafe_allow_html=True)
 
 # To insert image
-st.image(
-            "https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg",
-            width=900, # Manually Adjust the width of the image as per requirement
+#st.image(
+#            "https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg",
+#            width=900, # Manually Adjust the width of the image as per requirement
+#        )
+
+st.image("https://upload.wikimedia.org/wikipedia/commons/2/2f/Multi_vehicle_accident_-_M4_Motorway%2C_Sydney%2C_NSW_%288076208846%29.jpg",
+            width=700 # Manually Adjust the width of the image as per requirement
         )
 
 # To insert textual content 

@@ -5,6 +5,7 @@ import pandas as pd
 import numpy as np
 import xgboost as xgb
 from xgboost import XGBClassifier
+from sklearn.ensemble import GradientBoostingClassifier
 
 # Set page title
 st.set_page_config(

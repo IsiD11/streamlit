@@ -16,8 +16,8 @@ def results(model):
     st.text(classification_report(y_test, model.predict(X_test)))
 
 def splitDataset(df):
-   y_test =df['grav']
-   X_test = df.drop(['grav','gravMerged'], axis = 1)
+   y_test =df['severity']
+   X_test = df.drop(['severity'], axis = 1)
    return y_test,X_test
    
 
@@ -51,13 +51,13 @@ if df is not None:
 
 if option=='Gradient Boosting':
    st.write('Gradient Boosting score train 69.96')
-   #GBC=joblib.load('Models/gbcwohyperparms.dat')
-   #results(GBC)
+   GBC=joblib.load('Models/gbcwohyperparms.dat')
+   results(GBC)
 
 if option=='Gradient Boosting improved':
    st.write('Gradient Boosting score train 71.894')
-   #GBCi=joblib.load('Models/gbc.dat')
-   #results(GBCi)
+   GBCi=joblib.load('Models/gbc.dat')
+   results(GBCi)
 
 
 if option=='XGBOOST':

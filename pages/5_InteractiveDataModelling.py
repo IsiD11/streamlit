@@ -43,7 +43,7 @@ def load_data(url):
 
 
 
-df = load_data('test_sample_15_06_2023.csv')
+df = load_data('Datasets/X_test_sample.csv')
 
 if df is not None:
     y_test =df['severity']
@@ -52,27 +52,23 @@ if df is not None:
  
 
 if option=='Gradient Boosting':
-   st.write('Gradient Boosting score train 73.127')
-   GBC=joblib.load('Models/GBC_model.joblib')
+   st.write('Gradient Boosting score train 69.96')
+   GBC=joblib.load('Models/gbcwohyperparms.dat')
    results(GBC)
 
 if option=='Gradient Boosting improved':
-   st.write('Gradient Boosting score train 78.535)
-   GBCi=joblib.load('Models/GBC_improved_model.joblib')
+   st.write('Gradient Boosting score train 71.894)
+   GBCi=joblib.load('Models/gbc.dat')
    results(GBCi)
 
 
 if option=='XGBOOST':
-   st.write('XGBOOST score train 78.733')
-   xgb = joblib.load('Models/xgb_model.joblib')
+   st.write('XGBOOST score train 71.998')
+   xgb = joblib.load('Models/xgb_model.json')
    results(xgb)
 
 
 if option=='XGBOOST improved':
-   st.write('XGBOOST score train 78.733')
-   xgbi = joblib.load('Models/xgb_model.joblib')
-   results(xgbi)
-
-
-
-  
+   st.write('XGBOOST score train 72.052')
+   xgbi = joblib.load('Models/xgb_model_improved.json')
+   results(xgbi) 

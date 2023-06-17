@@ -11,10 +11,10 @@ st.set_page_config(
 st.markdown(f'<b><h0 style="color:#000000;font-size:35px;">{"Conclusion!"}</h0><br>', unsafe_allow_html=True)
 
 # To insert image
-#st.image(
-#            "https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg",
-#            width=900, # Manually Adjust the width of the image as per requirement
-#        )
+st.image(
+            "https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg",
+            width=900, # Manually Adjust the width of the image as per requirement
+        )
 
 # To insert textual content 
 

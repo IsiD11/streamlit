@@ -8,6 +8,7 @@ import sklearn
 import xgboost as xgb
 from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score
+from sklearn.ensemble import GradientBoostingClassifier
 
 def results(model):
     st.markdown('## Accuracy')

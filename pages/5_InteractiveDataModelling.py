@@ -57,7 +57,7 @@ if option=='Gradient Boosting':
    results(GBC)
 
 if option=='Gradient Boosting improved':
-   st.write('Gradient Boosting score train 71.894)
+   st.write('Gradient Boosting score train 71.894')
    GBCi=joblib.load('Models/gbc.dat')
    results(GBCi)
 

@@ -34,7 +34,7 @@ def splitDataset(df):
    
 
 
-st.markdown('# Machine learning models')
+st.markdown('# Machine learning models !')
 st.write("""Generally speaking we can consider that accuracy scores:
                           - Over 90% - Very Good
                     - Between 70% and 90% - Good

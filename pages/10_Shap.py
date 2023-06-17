@@ -16,17 +16,17 @@ def load_data(url):
     df = pd.read_csv(url)
     return df
 
-df = load_data('modelling_shap_2012_2015.csv')
+df = load_data('Datasets/X_test.csv')
 df = df.sample(n=1000)
 def st_shap(plot, height=None):
     shap_html = f"<head>{shap.getjs()}</head><body>{plot.html()}</body>"
     components.html(shap_html, height=height)
 
              
-y =df['grav']
-X = df.drop(['grav','gravMerged'], axis = 1)
+#y =df['grav']
+#X = df.drop(['grav','gravMerged'], axis = 1)
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25)
+#X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25)
 
 st.write('XGBoost model')
 model = xgboost.train({"learning_rate": 0.01}, xgboost.DMatrix(X, label=y), 100)

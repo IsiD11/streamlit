@@ -49,18 +49,20 @@ df = load_data('Datasets/X_test_sample.csv')
 if df is not None:
     y_test =df['severity']
     X_test = df.drop(['severity','Unnamed: 0'], axis = 1)
-"""
+
 if option=='Gradient Boosting':
    st.write('Gradient Boosting score train 69.96')
-   #GBC=joblib.load('Models/gbcwohyperparms.dat')
-   #results(GBC)
+   GBC = GradientBoostingClassifier()
+   GBC=load_model('Models/gbcwohyperparms.dat')
+   results(GBC)
 
 if option=='Gradient Boosting improved':
    st.write('Gradient Boosting score train 71.894')
-   #GBCi=joblib.load('Models/gbc.dat')
-   #results(GBCi)
+   GBCi = GradientBoostingClassifier()
+   GBCi=load_model('Models/gbc.dat')
+   results(GBCi)
 
-"""
+
 if option=='XGBOOST':
    st.write('XGBOOST score train 71.998')
    xgb = xgb.XGBClassifier()

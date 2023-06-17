@@ -235,11 +235,11 @@ if strintersectionType == 'Other intersection' :
 # Listing out available models
 modelToUse = st.radio("Select the model : ",('XGBoost','GradientBoost','RandomForest','AdaBoost'))
 
+model = ''
 if modelToUse == 'XGBoost':
   #Loading up the XGBoost model we created
   model = xgb.XGBClassifier()
   model.load_model('Models/xgb_model.json')
-
 
 if st.button('Predict Accident Severity'):
     prediction = model.predict(pd.DataFrame([[areaZone, collisionType, municipality, roadCategory, trafficRegime, nrOfTrafficLanes, accidentSituation, struckWithFixedObject, struckWithMovingObject, initialShockPoint, intersectionType ]], columns=[areaZone, collisionType, municipality, roadCategory, trafficRegime, nrOfTrafficLanes, accidentSituation, struckWithFixedObject, struckWithMovingObject, initialShockPoint, intersectionType]))

@@ -62,7 +62,8 @@ if option=='Gradient Boosting improved':
 
 if option=='XGBOOST':
    st.write('XGBOOST score train 71.998')
-   xgb = joblib.load('Models/xgb_model.json')
+   xgb = xgb.XGBClassifier()
+   xgb.load_model('Models/xgb_model.json')
    results(xgb)
 
 

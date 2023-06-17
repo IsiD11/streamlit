@@ -247,7 +247,24 @@ if modelToUse == 'XGBoost':
       elif prediction == 1:
           st.write('Class 1 - Heavily Injured/Died')
 
+elif modelToUse == 'GradientBoost':
+    #Loading up the GBoost model we created
+    model = GradientBoostingClassifier(
+                                 loss='log_loss',
+                                 n_estimators= 400,
+                                 max_depth= 4,
+                                 learning_rate=  0.25
+                                )
+    model.load_model('Models/gbc.dat')
+
+    if st.button('Predict Accident Severity'):
+        prediction = model.predict(pd.DataFrame([[areaZone, collisionType, municipality, roadCategory, trafficRegime, nrOfTrafficLanes, accidentSituation, struckWithFixedObject, struckWithMovingObject, initialShockPoint, intersectionType ]], columns=[areaZone, collisionType, municipality, roadCategory, trafficRegime, nrOfTrafficLanes, accidentSituation, struckWithFixedObject, struckWithMovingObject, initialShockPoint, intersectionType]))
+        if prediction == 0:
+            st.write('Class 0 - Not Injured/Slightly injured')
+        elif prediction == 1:
+            st.write('Class 1 - Heavily Injured/Died')    
    
+
 # To set the background image of the page
 st.markdown(
          f"""

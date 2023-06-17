@@ -7,7 +7,7 @@ import datetime as dt
 
 st.header('Data Visualization')
 
-st.image("https://www.simplilearn.com/ice9/free_resources_article_thumb/Data_Visualization_Tools.jpg", width=700)
+st.image("https://www.simplilearn.com/ice9/free_resources_article_thumb/Data_Visualization_Tools.jpg", width=900)
 #@st.cache_data
 
 #uploaded_file = st.file_uploader("Choose a file")

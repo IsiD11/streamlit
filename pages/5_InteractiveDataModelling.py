@@ -56,7 +56,7 @@ if option=='Gradient Boosting':
    GBC=load_model('Models/gbcwohyperparms.dat')
    results(GBC)
 
-if option=='Gradient Boosting improved':
+if option=='Gradient Boosting Improved':
    st.write('Gradient Boosting score train 71.894')
    GBCi = GradientBoostingClassifier()
    GBCi=load_model('Models/gbc.dat')
@@ -70,7 +70,7 @@ if option=='XGBOOST':
    results(xgb)
 
 
-if option=='XGBOOST improved':
+if option=='XGBOOST Improved':
    st.write('XGBOOST score train 72.052')
    xgb_imp = xgb.XGBClassifier()
    xgb_imp.load_model('Models/xgb_model_improved.json')
